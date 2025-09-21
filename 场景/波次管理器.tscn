@@ -1,0 +1,10 @@
+[gd_scene load_steps=0 format=3 uid="uid://ds7txby5aj15l"]
+
+[node name="波次管理器" type="Node"]
+
+[node name="波次计时器" type="Timer" parent="."]
+one_shot = true
+
+[node name="间隔计时器" type="Timer" parent="."]
+one_shot = false
+autostart = false

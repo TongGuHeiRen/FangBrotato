@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=3 uid="uid://dn0upyvd63gj4"]
+
+[ext_resource type="Script" uid="uid://b8j1k5n3p2v6c" path="res://脚本/Player.gd" id="1_uid"]
+
+[node name="菜单场景" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_uid")
+
+[node name="背景面板" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="按钮容器" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 100.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="继续按钮" type="Button" parent="按钮容器"]
+layout_mode = 2
+text = "继续"
+
+[node name="重新开始按钮" type="Button" parent="按钮容器"]
+layout_mode = 2
+text = "重新开始"
+
+[node name="退出按钮" type="Button" parent="按钮容器"]
+layout_mode = 2
+text = "退出"

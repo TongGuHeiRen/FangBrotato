@@ -1,0 +1,13 @@
+[gd_scene load_steps=0 format=3 uid="uid://dteddgxcwi4ns"]
+
+[node name="结算面板" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 0
+
+[node name="标签" type="Label" parent="."]
+layout_mode = 0
+
+[node name="重开按钮" type="Button" parent="."]
+layout_mode = 0
+text = "重开"

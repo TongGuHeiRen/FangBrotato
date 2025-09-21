@@ -1,0 +1,3 @@
+[gd_scene load_steps=0 format=3 uid="uid://dwlbctc4uu3a"]
+
+[node name="掉落金币" type="Area2D"]

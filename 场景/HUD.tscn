@@ -1,0 +1,14 @@
+[gd_scene load_steps=0 format=3 uid="uid://blkecmeud3rv1"]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="金币标签" type="Label" parent="."]
+
+[node name="生命值标签" type="Label" parent="."]
+
+[node name="波次标签" type="Label" parent="."]
+
+[node name="计时标签" type="Label" parent="."]
+
+[node name="菜单按钮" type="Button" parent="."]
+text = "菜单"

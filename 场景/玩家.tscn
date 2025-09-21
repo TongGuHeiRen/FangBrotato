@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://d16x1qanf2me2"]
+
+[ext_resource type="Script" uid="uid://b8j1k5n3p2v6c" path="res://脚本/Player.gd" id="1_uid"]
+[ext_resource type="Texture2D" uid="uid://csjwmx5i770nr" path="res://Godot-Rust.png" id="2_uid"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
+size = Vector2(50, 50)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1"]
+radius = 30.0
+
+[node name="玩家" type="CharacterBody2D"]
+position = Vector2(599, 263)
+script = ExtResource("1_uid")
+
+[node name="玩家图像" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_uid")
+
+[node name="碰撞形状" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_1")
+
+[node name="攻击区域" type="Area2D" parent="."]
+
+[node name="碰撞形状" type="CollisionShape2D" parent="攻击区域"]
+shape = SubResource("CircleShape2D_1")

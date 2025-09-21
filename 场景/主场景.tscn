@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpyvhfro1vhpu"]
+
+[ext_resource type="Script" uid="uid://dg7shaxw88v82" path="res://脚本/MainScene.gd" id="1_main"]
+[ext_resource type="Texture2D" uid="uid://cixkjjy68810d" path="res://icon.svg" id="2_gjuc8"]
+
+[node name="主场景" type="Node2D"]
+script = ExtResource("1_main")
+
+[node name="地图" type="TileMapLayer" parent="."]
+
+[node name="背景层" type="CanvasLayer" parent="."]
+
+[node name="背景" type="TextureRect" parent="背景层"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -648.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="相机" type="Camera2D" parent="."]
+
+[node name="UI层" type="CanvasLayer" parent="."]
+
+[node name="金币标签" type="Label" parent="UI层"]
+offset_left = 619.0
+offset_top = 8.0
+offset_right = 669.0
+offset_bottom = 31.0
+text = "金币: 0"
+
+[node name="生命值标签" type="Label" parent="UI层"]
+offset_left = 5.0
+offset_top = 618.0
+offset_right = 89.0
+offset_bottom = 641.0
+text = "生命值: 100"
+
+[node name="波次标签" type="Label" parent="UI层"]
+offset_left = 515.0
+offset_top = 8.0
+offset_right = 565.0
+offset_bottom = 31.0
+text = "波次: 1"
+
+[node name="菜单按钮" type="Button" parent="UI层"]
+offset_left = 1070.0
+offset_top = 4.0
+offset_right = 1150.0
+offset_bottom = 44.0
+text = "菜单"
+
+[node name="敌人容器" type="Node2D" parent="."]
+
+[node name="掉落容器" type="Node2D" parent="."]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(229, 157)
+texture = ExtResource("2_gjuc8")

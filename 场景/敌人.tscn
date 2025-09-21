@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://84yyxqeyeiud"]
+
+[ext_resource type="Script" uid="uid://rt2ti2asukhi" path="res://脚本/Enemy.gd" id="1_uid"]
+[ext_resource type="Texture2D" uid="uid://cixkjjy68810d" path="res://icon.svg" id="2_qcp26"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
+size = Vector2(40, 40)
+
+[node name="敌人" type="CharacterBody2D"]
+position = Vector2(300, 200)
+script = ExtResource("1_uid")
+
+[node name="敌人图像" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_qcp26")
+
+[node name="碰撞形状" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_1")
